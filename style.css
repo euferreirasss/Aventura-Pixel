@@ -1,0 +1,117 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #17213b;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 15px 10px;
+}
+
+h1 {
+  margin: 5px;
+  color: #ffd447;
+  text-shadow: 3px 3px #b64b35;
+}
+
+p {
+  margin: 8px;
+  color: #dce7ff;
+}
+
+#painel {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 12px;
+  font-weight: bold;
+}
+
+#jogo {
+  display: block;
+  width: min(100%, 960px);
+  height: auto;
+  margin: auto;
+  border: 4px solid white;
+  border-radius: 8px;
+  background: #72d7ff;
+  image-rendering: pixelated;
+  touch-action: none;
+}
+
+#mensagem {
+  min-height: 30px;
+  color: #ffe16b;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 12px auto;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 15px 22px;
+  color: white;
+  background: #ef613e;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px #a33a27;
+  touch-action: manipulation;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px #a33a27;
+}
+
+#esquerda,
+#direita {
+  background: #3479d4;
+  box-shadow: 0 4px #1c4787;
+}
+
+#saltar {
+  background: #2caf69;
+  box-shadow: 0 4px #167643;
+}
+
+#reiniciar {
+  background: #8b65d8;
+  box-shadow: 0 4px #563b94;
+}
+
+footer {
+  padding: 15px;
+  color: #aebbd8;
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  button {
+    padding: 16px 19px;
+    font-size: 16px;
+  }
+
+  #painel {
+    gap: 12px;
+    font-size: 14px;
+  }
+}

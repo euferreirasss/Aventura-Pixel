@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aventura Pixel - Jogo de Plataforma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>⭐ AVENTURA PIXEL ⭐</h1>
+    <p>Salta, apanha moedas e derrota os inimigos!</p>
+  </header>
+
+  <div id="painel">
+    <span>🪙 Moedas: <span id="moedas">0</span></span>
+    <span>❤️ Vidas: <span id="vidas">3</span></span>
+    <span>🏁 Nível: <span id="nivel">1</span></span>
+  </div>
+
+  <canvas id="jogo" width="960" height="540"></canvas>
+
+  <div id="mensagem">
+    Usa as setas ou A/D para andar. Espaço para saltar!
+  </div>
+
+  <div class="controles">
+    <button id="esquerda">◀</button>
+    <button id="direita">▶</button>
+    <button id="saltar">⬆ SALTAR</button>
+    <button id="reiniciar">↻ Reiniciar</button>
+  </div>
+
+  <footer>
+    Aventura Pixel — um jogo original de plataforma.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
